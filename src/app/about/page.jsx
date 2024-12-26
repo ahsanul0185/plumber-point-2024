@@ -42,7 +42,7 @@ const About = () => {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-52 gap-y-7 mt-12">
             {services.map((service, idx) => {
               return (
-                <li className="">
+                <li key={idx} className="">
                   <BulletText bold>{service}</BulletText>
                   <p className="ml-6 text-base text-[#6d6d6d] pt-1">
                   Our team specializes in handling both planned projects and unexpected plumbing emergencies. We are available 24/7, because we know that plumbing problems can arise at the most inconvenient times.
